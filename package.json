@@ -25,7 +25,17 @@
   "pnpm": {
     "overrides": {
       "@babel/core": "7.28.5"
-    }
+    },
+    "approvedBuilds": [
+      "esbuild",
+      "@swc/core",
+      "sharp",
+      "unrs-resolver",
+      "workerd",
+      "better-sqlite3",
+      "core-js",
+      "core-js-pure"
+    ]
   },
   "dependencies": {
     "bad-words": "^4.0.0"

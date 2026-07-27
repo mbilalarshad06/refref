@@ -1,0 +1,10 @@
+{
+  "esbuild": true,
+  "@swc/core": true,
+  "sharp": true,
+  "unrs-resolver": true,
+  "workerd": true,
+  "better-sqlite3": true,
+  "core-js": true,
+  "core-js-pure": true
+}
