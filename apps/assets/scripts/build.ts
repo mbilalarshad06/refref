@@ -211,6 +211,8 @@ const isWatchMode = process.argv.includes("--watch");
 if (isWatchMode) {
   console.log("👀 Starting watch mode...\n");
 
+  await mkdir(PUBLIC_DIR, { recursive: true });
+
   // Get all source paths to watch
   const watchPaths = SCRIPTS.map((config) => config.sourcePath);
 

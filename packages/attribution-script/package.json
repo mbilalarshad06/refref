@@ -19,7 +19,7 @@
   ],
   "scripts": {
     "dev": "vite --port 5174",
-    "build": "infisical run --env=dev -- vite build --mode development || vite build --mode development",
+    "build": "vite build --mode development",
     "build:prod": "infisical run --env=prod -- vite build --mode production || vite build --mode production",
     "clean": "rm -rf dist src/**/*.js src/**/*.js.map",
     "lint": "eslint . --report-unused-disable-directives",

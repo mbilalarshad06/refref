@@ -8,7 +8,7 @@
     "build": "tsx scripts/build.ts",
     "build:prod": "tsx scripts/build.ts --prod",
     "clean": "rm -rf public/*.js public/*.map",
-    "dev": "infisical run --env=dev -- concurrently \"tsx scripts/build.ts --watch\" \"wrangler dev --port 8787\" || concurrently \"tsx scripts/build.ts --watch\" \"wrangler dev --port 8787\"",
+    "dev": "concurrently \"tsx scripts/build.ts --watch\" \"wrangler dev --port 8787\"",
     "deploy:cloudflare": "pnpm build:prod && wrangler deploy",
     "deploy:cloudflare:dev": "pnpm build && wrangler deploy --env dev"
   },
